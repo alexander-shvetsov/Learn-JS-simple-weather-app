@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+select {
+	outline: none;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	padding: 8px;
+	font-size: inherit;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: #fff;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6rem;
+}
+
+.container {
+	height: 100vh;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 15px;
+}
+
+header {
+	padding-top: 20px;
+}
+
+.header-title {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.weather {
+	padding: 30px;
+	margin: 0 auto;
+	margin-top: 70px;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0.2);
+	max-width: 320px;
+	height: 450px;
+}
+
+.weather-search #city {
+	width: 100%;
+}
+
+.weather-out {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.weather-temperature {
+	font-size: 8rem;
+}
+
+.weather-city {
+	margin-top: 30px;
+	font-size: 2.4rem;
+}
+
+@media (max-width: 320px) {
+	.weather {
+		margin-top: 30px;
+	}
+}
